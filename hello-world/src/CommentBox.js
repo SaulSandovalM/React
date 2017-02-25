@@ -110,4 +110,18 @@ class CommentBox extends Component {
     }
 }
 
+class Clock extends Component {
+  render () {
+    function tick() {
+      const element = (
+        <div>
+          <h1>Tick Tack</h1>
+          <h2>It is {new Date().toLocaleTimeString()}.</h2>
+        </div>
+      );
+    }
+    setInterval(tick, 1000);
+  }
+}
+
 export default CommentBox;
